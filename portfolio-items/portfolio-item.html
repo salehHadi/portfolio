@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/devjane.png" alt="">
+        </div>
+        
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- taskes to do 
+            - put all my project paject picture
+              and make him able to turn it 
+
+            - write project name and description
+        -->
+    
+    <!-- introdection -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Project Name:<strong>Picture Galary</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">your Picture from API</p>
+        <img src="https://upcdn.io/FW25awy/raw/Screen%20Shot%201444-04-02%20at%206.10.41%20AM-PgNc.png" alt="" class="intro__img intro__img_project">
+    </section>
+
+
+    <div class="portfolio-item-individual">
+        <p>This is React Single Page App, I have use on this project more advance react tools like {React Router, useContext}, and I have passed the data through out the app from the data based that I have created.</p>
+            <h3 class="portfolio-item-individual__callToAction--title">Press on the picture below to see the project:</h3>
+        <a href="https://salehhadi.github.io/picture-galary/" class="portfolio-item-individual__img">
+            <img src="https://upcdn.io/FW25awy/raw/Screen%20Shot%201444-04-03%20at%203.14.44%20AM-6rDR.png" class="portfolio-item-individual__callToAction--img" alt="">
+        </a>
+        <div class="intro__img-btn_div">
+            <button class="intro__img-btn btn_movePrev"><</button>
+            <button class="intro__img-btn btn_moveNext">></button>
+        </div>
+        <p>I have builed it from scratch to make full
+            functional app that's able to surve customer needs by Fatch whatever topic
+            of picture from API with Easy, Fun and Fast way to enjoyable way.</p>
+        <p>I have used on this project API from unsplash, and the app has 5 pages {intro, main, picture information, picture favorits, basket}.</p>
+        <p>each page has it own feature and the all work togther and has an efect on each other because all pages has been linked in the databased.</p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="sasa97977s@hotmail.com" class="footer__link">sasa97977s@hotmail.com</a>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/saleh_hadi_11">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/salehHadi">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/index-portfolio-item1.js"></script>
+    <script type="module" src="../js/imgData.js"></script>
+</body>
+</html>
